@@ -42,11 +42,12 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span>🕒</span>
-                <span>{site.hours}</span>
+                <span>{site.hoursWeekdays}</span>
+                <span>{site.hoursSunday}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span>📱</span>
-                <span>{site.phone}</span>
+                <span>+{site.phone}</span>
               </li>
             </ul>
           </div>
