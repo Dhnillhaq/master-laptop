@@ -7,34 +7,25 @@ import { site } from "@/lib/site";
 import { waLink } from "@/lib/wa";
 
 const services = [
-  { title: "Install Ulang", desc: "Windows + driver + aplikasi dasar, rapi & siap pakai." },
-  { title: "Upgrade SSD/RAM", desc: "Rekomendasi kompatibel + pemasangan + cloning (opsional)." },
-  { title: "Perbaikan Hardware", desc: "Keyboard, LCD, fan, port charger, overheat, dll." },
-  { title: "Cleaning & Repaste", desc: "Bersih debu + ganti thermal paste, suhu lebih stabil." },
-  { title: "Blue Screen / Lemot", desc: "Diagnosa penyebab + optimasi + perbaikan." },
-  { title: "Data Recovery", desc: "Bantu cek kemungkinan pemulihan data (case by case)." },
+  { title: "Install Ulang", desc: "Windows + driver + aplikasi dasar, rapi & siap pakai.", icon: "💻", bgColor: "from-orange-50 to-white", borderColor: "border-orange-200", textColor: "text-orange-600" },
+  { title: "Upgrade SSD/RAM", desc: "Rekomendasi kompatibel + pemasangan + cloning (opsional).", icon: "⚡", bgColor: "from-amber-50 to-white", borderColor: "border-amber-200", textColor: "text-amber-700" },
+  { title: "Perbaikan Hardware", desc: "Keyboard, LCD, fan, port charger, engsel, dll.", icon: "🔧", bgColor: "from-orange-50 to-white", borderColor: "border-orange-200", textColor: "text-orange-600" },
+  { title: "Cleaning & Repaste", desc: "Bersih debu + ganti thermal paste, suhu lebih stabil.", icon: "✨", bgColor: "from-yellow-50 to-white", borderColor: "border-yellow-200", textColor: "text-yellow-700" },
+  { title: "Blue Screen / Lemot", desc: "Diagnosa penyebab + optimasi + perbaikan.", icon: "🩺", bgColor: "from-red-50 to-white", borderColor: "border-red-200", textColor: "text-red-600" },
+  { title: "Data Recovery", desc: "Bantu cek kemungkinan pemulihan data (case by case).", icon: "💾", bgColor: "from-amber-50 to-white", borderColor: "border-amber-200", textColor: "text-amber-700" },
 ];
 
-const pricing = [
-  { service: "Install Ulang Windows", price: "75K - 100K", desc: "Windows 10/11 + driver + aktivasi", icon: "💻" },
-  { service: "Cleaning + Repaste", price: "75K - 125K", desc: "Bersih debu + ganti thermal paste", icon: "✨" },
-  { service: "Upgrade SSD", price: "50K*", desc: "Pasang + cloning data (*harga part terpisah)", icon: "⚡" },
-  { service: "Upgrade RAM", price: "30K*", desc: "Pasang + test (*harga part terpisah)", icon: "🚀" },
-  { service: "Ganti Keyboard", price: "150K - 300K*", desc: "Termasuk part original (*tergantung tipe)", icon: "⌨️" },
-  { service: "Ganti Engsel Laptop", price: "100K - 200K", desc: "Perbaikan/ganti engsel patah/kendor", icon: "🔧" },
-  { service: "Service LCD/Layar", price: "200K - 800K*", desc: "Ganti LCD pecah/bergaris (*tergantung tipe)", icon: "🖥️" },
-  { service: "Diagnosa & Troubleshoot", price: "50K - 100K", desc: "Cek masalah + laporan detail", icon: "🔍" },
-  { service: "Data Recovery", price: "Mulai 200K", desc: "Pemulihan data (case by case)", icon: "💾" },
-];
-
-const testimonials = [
-  { name: "Muhammad Ulil Albab", text: "Konsultasi printer rusak bisa langsung diperbaiki Alhamdulillah bapaknya jelasin step bye stepnya harganya sesuai kantong mahasiswa buat print skripsi huhu sempet bingung alhamdulillah nemu servis amanah ini", rating: 5, avatar: "👨", time: "3 bulan lalu" },
-  { name: "Gregorio Hartono", text: "Perfect! Baru kali ini ketemu service laptop yang gercep & luar biasa. Pelayanan Nomor 1☝️", rating: 5, avatar: "👨‍💼", time: "6 hari lalu" },
-  { name: "Muhammad Bahrudin", text: "Pengalaman service laptop yang memuaskan. Awalnya laptop saya bermasalah dan sudah takut biayanya bakal mahal, tapi ternyata pelayanannya sangat jujur dan profesional. Sangat rekomendasi!", rating: 5, avatar: "👨", time: "Sebulan lalu" },
-  { name: "Satria Bima", text: "Silahkan yang cari tempat service buat laptop terutama mahasiswa/i bisa langsung kesini, tempatnya strategis dan mudah dijangkau dari kampus favorit kalian", rating: 5, avatar: "👨‍🎓", time: "3 bulan lalu" },
-  { name: "Ahmad David Syahputra", text: "Tempat servis yang sangat bagus untuk laptop maupun alat elektronik lain saya sering kali ke tempat ini dan pengerjaannya juga cepat. 5 star bagi saya 👍👍", rating: 5, avatar: "👨", time: "Sebulan lalu" },
-  { name: "Muhammad Arief Setyawan", text: "Pelayanan cepat, harga servicenya terjangkau dan amanah", rating: 5, avatar: "👨", time: "2 bulan lalu" },
-];
+// const pricing = [
+//   { service: "Install Ulang Windows", price: "75K - 100K", desc: "Windows 10/11 + driver + aktivasi", icon: "💻" },
+//   { service: "Cleaning + Repaste", price: "75K - 125K", desc: "Bersih debu + ganti thermal paste", icon: "✨" },
+//   { service: "Upgrade SSD", price: "50K*", desc: "Pasang + cloning data (*harga part terpisah)", icon: "⚡" },
+//   { service: "Upgrade RAM", price: "30K*", desc: "Pasang + test (*harga part terpisah)", icon: "🚀" },
+//   { service: "Ganti Keyboard", price: "150K - 300K*", desc: "Termasuk part original (*tergantung tipe)", icon: "⌨️" },
+//   { service: "Ganti Engsel Laptop", price: "100K - 200K", desc: "Perbaikan/ganti engsel patah/kendor", icon: "🔧" },
+//   { service: "Service LCD/Layar", price: "200K - 800K*", desc: "Ganti LCD pecah/bergaris (*tergantung tipe)", icon: "🖥️" },
+//   { service: "Diagnosa & Troubleshoot", price: "50K - 100K", desc: "Cek masalah + laporan detail", icon: "🔍" },
+//   { service: "Data Recovery", price: "Mulai 200K", desc: "Pemulihan data (case by case)", icon: "💾" },
+// ];
 
 const faqs = [
   { q: "Berapa lama proses servis?", a: "Tergantung kasus. Ringan bisa same day, kasus berat 1–3 hari." },
@@ -171,14 +162,7 @@ export default function Home() {
         subtitle="Solusi lengkap untuk semua masalah laptop & PC Anda"
       >
         <div className="grid gap-6 md:grid-cols-3">
-          {[
-            { title: "Install Ulang", desc: "Windows + driver + aplikasi dasar, rapi & siap pakai.", icon: "💻", bgColor: "from-orange-50 to-white", borderColor: "border-orange-200", textColor: "text-orange-600" },
-            { title: "Upgrade SSD/RAM", desc: "Rekomendasi kompatibel + pemasangan + cloning (opsional).", icon: "⚡", bgColor: "from-amber-50 to-white", borderColor: "border-amber-200", textColor: "text-amber-700" },
-            { title: "Perbaikan Hardware", desc: "Keyboard, LCD, fan, port charger, overheat, dll.", icon: "🔧", bgColor: "from-orange-50 to-white", borderColor: "border-orange-200", textColor: "text-orange-600" },
-            { title: "Cleaning & Repaste", desc: "Bersih debu + ganti thermal paste, suhu lebih stabil.", icon: "✨", bgColor: "from-yellow-50 to-white", borderColor: "border-yellow-200", textColor: "text-yellow-700" },
-            { title: "Blue Screen / Lemot", desc: "Diagnosa penyebab + optimasi + perbaikan.", icon: "🩺", bgColor: "from-red-50 to-white", borderColor: "border-red-200", textColor: "text-red-600" },
-            { title: "Data Recovery", desc: "Bantu cek kemungkinan pemulihan data (case by case).", icon: "💾", bgColor: "from-amber-50 to-white", borderColor: "border-amber-200", textColor: "text-amber-700" },
-          ].map((s) => (
+          {services.map((s) => (
             <div key={s.title} className={`rounded-3xl bg-gradient-to-br ${s.bgColor} border-2 ${s.borderColor} p-6 card-hover shadow-lg`}>
               <div className="text-5xl mb-4">{s.icon}</div>
               <div className="font-bold text-xl text-zinc-900">{s.title}</div>
