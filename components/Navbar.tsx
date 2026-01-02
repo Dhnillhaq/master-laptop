@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 const items = [
   { label: "Layanan", href: "#layanan" },
-  { label: "Harga", href: "#harga" },
+  // { label: "Harga", href: "#harga" },
   { label: "Portofolio", href: "#portofolio" },
   { label: "Testimoni", href: "#testimoni" },
   { label: "Lokasi", href: "#lokasi" },
